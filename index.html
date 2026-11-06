@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f3f5f9">
 <link rel="apple-touch-icon" href="./Stock_supply.png">
-<title>시장 수급 | MARKET FLOW</title>
+<title>시장 수급 분석 | MARKET FLOW ANALYSIS</title>
 <style>
 :root{--bg:#f3f5f9;--card:#fff;--line:#e6eaf1;--text:#202938;--muted:#929dad;--navy:#263e60;--red:#e34b55;--blue:#3478d4;--green:#159b76}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:13px -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
@@ -66,7 +66,7 @@ table td:first-child,.cmp-card td:first-child{text-align:center!important}
 </head>
 <body>
 <div class="app">
-<header><div class="brand"><i></i><div><b>시장 수급</b><small>MARKET FLOW · KRX</small></div></div><button class="icon-btn" id="refresh" aria-label="새로고침">↻</button></header>
+<header><div class="brand"><i></i><div><b>시장 수급 분석</b><small>MARKET FLOW ANALYSIS</small></div></div><button class="icon-btn" id="refresh" aria-label="새로고침">↻</button></header>
 <main>
 <div class="topline"><span class="sub" id="marketCaption">국내 시장 자금 흐름</span><span class="updated" id="updated">데이터 연결 중</span></div>
 <nav class="nav" id="nav">
@@ -235,7 +235,7 @@ table td:first-child,.cmp-card td:first-child{text-align:center!important}
 </main></div>
 <script>
 'use strict';
-const WORKER='https://supply.hundprint.workers.dev';
+const WORKER='https://supply.mcraft-tiger-574.workers.dev';
 const $=id=>document.getElementById(id);
 const S={tab:'kospi',days:60,cum:10,cumMarket:'KOSPI',period:'day',raw:null,markets:{},page:{},flow:{},invTime:{},progTime:{},errors:[],cumDays:240};
 const COLORS={individual:'#e34b55',foreign:'#3478d4',institution:'#159b76',arb:'#e08a1e',non:'#3478d4',tot:'#159b76'};
